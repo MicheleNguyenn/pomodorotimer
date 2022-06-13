@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Pomodoro timer</title>
+    </head>
+<body>
+    <div class="base row" id="base">
+        <div class="col-md-12 title">
+            <h1>Pomodoro timer</h1>
+            <hr>
+            <div class="timer">
+                <img src="pomodoro.png">
+                <p id="stage" class="stage">Press start to begin!</p>
+                <p id="time" class="timernumber">25:00</p>
+                <button onclick="timerWork()" id="btn">Start</button>
+                <div class="what">
+                    <h2>What is the pomodoro technique?</h2>
+                    <p>
+                        The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.<br>
+                        It uses a kitchen timer to break work into intervals, typically 25 minutes in length, separated by short breaks.<br>
+                        Each interval is known as a pomodoro, from the Italian word for tomato, after the<br>
+                        tomato-shaped kitchen timer Cirillo used as a university student.<br><br>
+                        Source: <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Wikipedia</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

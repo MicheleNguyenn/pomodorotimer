@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.base{
+    height:100vh;
+    background: #FE5F55;
+    width:100vw;
+    transition: all 0.7s ease;
+}
+
+.base.pause{
+    background: #94C9A9;
+    transition: all 0.7s ease;
+}
+
+.row{
+    margin: 0;
+}
+
+.title{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    height: 20vh;
+    width:100vw;
+}
+
+.title h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.title hr{
+    width: 40vw;
+    margin: auto;
+}
+
+.timernumber{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    padding-top: 5vh;
+}
+
+.stage{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+}
+
+img{
+    height: 200px;
+}
+
+.timer button{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    background: #f2f2f2;
+    border: 3px solid black;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.what{
+    padding-top: 5vh;
+}
+
+.what h2{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+}
+
+.what p{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.what a{
+    text-decoration: none;
+    color: black;
+}
