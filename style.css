@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto+Mono&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #FE5F55;
+    transition: all 0.7s ease;
 }
 
 .base{
     height:100vh;
-    background: #FE5F55;
     width:100vw;
     transition: all 0.7s ease;
 }
 
-.base.pause{
+*.pause{
     background: #94C9A9;
     transition: all 0.7s ease;
 }
@@ -83,6 +85,22 @@ img{
 }
 
 .what a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size:14px;
+}
+
+.footer a {
     text-decoration: none;
     color: black;
 }

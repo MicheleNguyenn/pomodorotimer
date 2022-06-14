@@ -30,16 +30,20 @@ function timerWork () {
             // Display the result in the element with id="time"
             if (seconds < 10){
                 document.getElementById("time").innerHTML = minutes + ":0" + seconds;
+                document.getElementById("title").innerHTML = minutes + ":0" + seconds + " - Focus";
             }
             else{
                 document.getElementById("time").innerHTML = minutes + ":" + seconds;
+                document.getElementById("title").innerHTML = minutes + ":" + seconds + " - Focus";
             }
             if (distance <= 1000 || flag == 0) {
                 clearInterval(x);
                 if(distance <= 1000){
                     flag = 0;
-                    var base = document.getElementById("base");
-                    base.classList.add("pause");
+                    var base = document.querySelectorAll("*");
+                    for (let i = 0; i < base.length; i++) {
+                        base[i].classList.add("pause");
+                    }
                     var stage = document.getElementById("stage");
                     stage.innerHTML = "It's time to rest, you earned it!";
                     btn.setAttribute("onclick","pause()");
@@ -47,9 +51,11 @@ function timerWork () {
                     if (cont == 4) {
                         cont = 0;
                         document.getElementById("time").innerHTML = "15:00";
+                        document.getElementById("title").innerHTML = "15:00 - Relax";
                     }
                     else{
                         document.getElementById("time").innerHTML = "5:00";
+                        document.getElementById("title").innerHTML = "5:00 - Relax";
                     }
                     pause();
                 }
@@ -95,18 +101,23 @@ function pause(){
             // Display the result in the element with id="time"
             if (seconds < 10){
                 document.getElementById("time").innerHTML = minutes + ":0" + seconds;
+                document.getElementById("title").innerHTML = minutes + ":0" + seconds + " - Relax";
             }
             else{
                 document.getElementById("time").innerHTML = minutes + ":" + seconds;
+                document.getElementById("title").innerHTML = minutes + ":" + seconds + " - Relax";
             }
             if (distance <= 1000 || flag == 0) {
                 clearInterval(x);
                 if(distance <= 1000){
                     flag = 0;
+                    var base = document.querySelectorAll("*");
+                    for (let i = 0; i < base.length; i++) {
+                        base[i].classList.remove("pause");
+                    }
                     btn.setAttribute("onclick","timerWork()");
                     document.getElementById("time").innerHTML = "25:00";
-                    var base = document.getElementById("base");
-                    base.classList.remove("pause");
+                    document.getElementById("title").innerHTML = "25:00 - Focus";
                     timerWork();
                 }
             }
